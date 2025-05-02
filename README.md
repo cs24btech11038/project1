@@ -23,14 +23,13 @@ arbitraryarithmetic/
 
 ## How to Compile and Run
 
-You can use the provided `build.py` script for easier compilation and execution.
+You can use the provided `script.py` script for easier compilation and execution.
 
 ### Prerequisites
 
 - Java (JDK 17+ recommended)
-- Python 3 (for build script)
+- Python 3 (for script)
 
-### Steps
 
 ```bash
 # Clone the repository
