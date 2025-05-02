@@ -1,27 +1,42 @@
 # Arbitrary Precision Arithmetic Library
 
-This project implements an **arbitrary precision arithmetic library** in Java, supporting operations on both integers and floating-point numbers with arbitrary length. It includes both a Java library and a command-line interface.
+This is a Java-based library that performs arithmetic operations on integers and floating-point numbers with **arbitrary precision** using `BigInteger` and `BigDecimal`. It supports both **library mode** (for developers) and **command-line mode** (for users).
 
----
+## Features
 
-## Package Structure
+- Supports arbitrarily large integers (`AInteger`)
+- Supports floating-point numbers with high precision (`AFloat`)
+- Operations: Addition, Subtraction, Multiplication, Division
+- Clean CLI interface
+- Modular, object-oriented design
 
+## Project Structure
 
----
+arbitraryarithmetic/
+│
+├── AInteger.java # Arbitrary-precision integer class
+├── AFloat.java # Arbitrary-precision float class
+├── Arithmetic.java # Generic interface for arithmetic operations
+├── MyInfArith.java # Command-line interface entry point
+├── build.py # Python script to compile and run
+└── README.md # Project documentation
 
-##  Features
+## How to Compile and Run
 
-- Arbitrary-precision support for integers (`AInteger`) and floats (`AFloat`)
-- Arithmetic operations: `add`, `subtract`, `multiply`, `divide`
-- Exception handling (e.g., division by zero)
-- CLI support for basic arithmetic tasks
+You can use the provided `build.py` script for easier compilation and execution.
 
----
+### Prerequisites
 
-##  How to Build
+- Java (JDK 17+ recommended)
+- Python 3 (for build script)
 
-Make sure [Apache Ant](https://ant.apache.org/) is installed.
+### Steps
 
 ```bash
-ant jar
+# Clone the repository
+git clone git@github.com:cs24btech11038/project1.git
+cd project1
+
+# Run using build script
+python3 build.py
 
